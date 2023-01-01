@@ -105,6 +105,7 @@ main .info {
   body {
     font-size: 10px;
     background-image: url(images/pattern-background-mobile.svg);
+    overflow: hidden;
   }
 
   main {
