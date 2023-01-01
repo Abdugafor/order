@@ -111,10 +111,11 @@ main .info {
     padding: 28px 27px 30px 27px;
   }
   .image img{
-    width: 298px;
+    width: 100%;
   }
   .card {
-    max-width: 298px;
+    max-width: 75%;
+    margin: 0 auto;
   }
 
   .music {
