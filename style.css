@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    /* Primary */
+
+--Pale--blue: hsl(225, 100%, 94%);
+--Bright--blue: hsl(245, 75%, 52%);
+
+/*  Neutral */
+
+--Ver--pal--blue: hsl(225, 100%, 98%);
+--Desaturated--blue: hsl(224, 23%, 55%);
+--Dark--blue: hsl(223, 47%, 23%);
+}
+body {
+    font-size: 16px;
+    color: grey;
+    font-family: 'Red Hat Display', sans-serif;
+    background: var(--Ver--pal--blue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img {
+    border-top-left-radius: 40px ;
+    border-top-right-radius: 40px;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card  {
+    width: 400px;
+    background: white;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 4px 4px 14px 4px rgba(0, 0, 0, 0.25);
+}
+main {
+    padding: 30px 40px 50px 50px;
+}
+main .info h1 {
+    color: var(--Dark--blue);
+    margin-bottom: 30px;
+}
+main .info {
+    margin-bottom: 20px;
+}
+.music-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 37px;
+    background: rgba(232, 232, 232, 0.387);
+    padding: 20px 20px;
+    border-radius: 14px;
+}
+.music {
+    display: flex;
+}
+.music-name {
+    margin-left: 10px;
+    text-align: left;
+}
+.music-name h5 {
+    font-size: 18px;
+    color: var(--Dark--blue);
+}
+.music-card .change a {
+    color: var(--Bright--blue);
+    text-decoration: none;
+}
+.payment button {
+    width: 100%;
+    padding: 11px 0;
+    border: none;
+    border-radius: 11px;
+    color: white;
+    font-family: inherit;
+    font-weight: 900;
+    background: var(--Bright--blue);
+    box-shadow: 4px 4px 14px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 23px;
+}
+.payment button:hover {
+    cursor: pointer;
+    background: var(--Desaturated--blue);
+}
+.payment a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--Desaturated--blue);
+}
+.payment a:hover {
+    color: var(--Dark--blue);
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 10px;
+    background-image: url(images/pattern-background-mobile.svg);
+  }
+
+  main {
+    padding: 28px 27px 30px 27px;
+  }
+  .image img{
+    width: 347px;
+  }
+  .card {
+    width: 347px;
+  }
+
+  .music {
+    align-items: center;
+  }
+  .music-name h5 {
+    font-size: 14px;
+  }
+}
